@@ -31,21 +31,17 @@ public class Robot extends TimedRobot {
     sensor = new DigitalInput(0); // DIO port 0
     intakeTimer = new Timer();
     System.out.println("Motor robot initialized! along with the sensor");
-
   }
 
 // this function is getting called every 20ms 
   @Override
   public void robotPeriodic() {}
 
+  @Override
+  public void autonomousInit() {}
 
   @Override
-  public void autonomousInit() {
-
-  }
-
-  @Override
-public void autonomousPeriodic() {}
+  public void autonomousPeriodic() {}
 
   //This function is called once when teleop is enabled. 
   @Override
@@ -117,3 +113,4 @@ public void autonomousPeriodic() {}
   @Override
   public void simulationPeriodic() {}
 }
+// hellooooo
